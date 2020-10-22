@@ -70,6 +70,15 @@
 
     <build>
         <plugins>
+            <!-- APPLICATION -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.funtl.itoken.zipkin.ZipkinApplication</mainClass>
+                </configuration>
+            </plugin>
+
             <!-- Compiler 插件, 设定 JDK 版本 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -178,15 +187,6 @@
                             <exclude>**/*.min.js</exclude>
                             <exclude>**/*.min.css</exclude>
                         </excludes>
-                    </configuration>
-                </plugin>
-
-                <!-- APPLICATION -->
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <configuration>
-                        <mainClass>com.funtl.itoken.zipkin.ZipkinApplication</mainClass>
                     </configuration>
                 </plugin>
             </plugins>
