@@ -4,4 +4,4 @@ spring:
       uri: http://47.114.63.61:8888
       name: itoken-zipkin
       label: master
-      profile: dev # 生产环境配置文件
+      profile: prod # 生产环境配置文件
